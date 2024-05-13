@@ -1,7 +1,6 @@
 ## Тестовое задание для https://www.cse.ru/
 
-[Screen_recording_20240418_034309.webm](https://github.com/Gafrox/AspectTest/assets/82141894/[Screen_recording_20240513_222107.webm](https://github.com/Gafrox/CSETest/assets/82141894/b5834b74-4fd7-4721-a282-3e358f7eca8b)
-07215417-2f1a-4a38-b406-95f514a29232)
+[Screen_recording_20240513_222107.webm](https://github.com/Gafrox/CSETest/assets/82141894/b5834b74-4fd7-4721-a282-3e358f7eca8b)
 
 ### Тестовое задание (андроид-разработчик).
 

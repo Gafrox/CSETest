@@ -26,7 +26,7 @@ class AddCarFragment : Fragment() {
     private lateinit var binding: FragmentAddCarBinding
     private var carId: Int? = null
 
-    private lateinit var imageUri: Uri
+    private var imageUri: Uri? = null
 
     private val getContent =
         registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
@@ -70,7 +70,9 @@ class AddCarFragment : Fragment() {
             }
             btnSave.setOnClickListener {
                 carId = if (carId == null) repository.getAll().size else carId
-                copyImageUriToInternalStorage(requireContext(), imageUri, "img${carId}.jpg")
+                if (imageUri != null) {
+                    copyImageUriToInternalStorage(requireContext(), imageUri!!, "img${carId}.jpg")
+                }
                 val car = Car(
                     id = carId!!,
                     name = etName.editText?.text.toString(),
